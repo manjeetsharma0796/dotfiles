@@ -56,3 +56,18 @@ colorscheme gruvbox
 
 " No Swap File
 set noswapfile
+
+call plug#begin()
+
+" Any valid git URL is allowed
+Plug 'ghifarit53/tokyonight-vim'
+
+" On-demand loading
+Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
+
+" Unmanaged plugin (manually installed and updated)
+Plug '~/my-prototype-plugin'
+
+" Initialize plugin system
+" - Automatically executes `filetype plugin indent on` and `syntax enable`.
+call plug#end()
