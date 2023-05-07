@@ -108,5 +108,5 @@ export PAGER="most"
 alias ls="ls -lG"
 alias c=clear
 alias recent=recent.sh
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+alias vrc="vim ~/.vimrc"
