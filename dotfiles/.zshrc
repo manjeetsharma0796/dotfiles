@@ -108,5 +108,5 @@ export PAGER="most"
 alias ls="ls -lG"
 alias c=clear
 alias recent=recent.sh
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 alias vrc="vim ~/.vimrc"
