@@ -110,3 +110,4 @@ alias c=clear
 alias recent=recent.sh
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 alias vrc="vim ~/.vimrc"
+alias itermcd="open -a 'iterm' '$PWD'"

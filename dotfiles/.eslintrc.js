@@ -1,27 +1,45 @@
 module.exports = {
-  "env": {
-    node: true,
-    browser: true
+  env: {
+    es2022: true,
   },
 
-  parserOptions: {
-    "ecmaVersion": 6 
-  },
-
-  "rules": {
-    "eqeqeq": "error",
-    "semi": ["error", 'always'],
+  rules: {
+    "no-unused-private-class-members": "error",
+    "no-unused-vars": "error",
+    "semi": ["error", "always", { omitLastInOneLineBlock: true }],
+    "quotes": ["error", "double"],
+    "indent": ["error", 2, { SwitchCase: 1 }],
+    "complexity": ["error", 2],
+    "max-statements": ["error", 18],
+    "no-cond-assign": "error",
+    "no-empty": "warn",
+    "no-implicit-coercion": "warn",
+    "no-implicit-globals": "error",
+    "no-param-reassign": "error",
+    "no-shadow": "error",
+    "id-denylist": ["error", "data", "callback"],
+    "no-extra-semi": "error",
+    "quotes": ["error", "double"],
+    "key-spacing": ["error"],
+    "array-callback-return": ["error", { checkForEach: true }],
+    "no-sparse-arrays": "warn",
+    "camelcase": "warn",
+    "dot-notation": "warn",
+    "max-depth": ["warn", 3],
+    "no-nested-ternary": "warn",
+    "no-undef-init": "warn",
+    "no-useless-escape": "warn",
+    "max-len": "error",
     "comma-spacing": ["error"],
     "no-multi-spaces": ["error"],
-    "no-inline-comments": ["error"],
-    "no-multiple-empty-lines": ["error"],
-    "no-unused-vars": ["warn"],
-    "dot-notation": "error",
-    "complexity": ["warn", 4],
-    "max-depth": ["error", 4],
-    "key-spacing": ["error"],
-    "max-len": ["warn", { "code": 80 }],
-    "no-negated-condition": "error",
-    "no-unneeded-ternary": "error"
-  }
+    "prefer-const": ["error"],
+    "prefer-destructuring": ["error"],
+    "max-params": ["error", 5],
+    "no-use-before-define": ["error"],
+    "no-this-before-super": ["error"],
+    "max-nested-callbacks": ["error", { max: 2 }],
+    "no-else-return": "error",
+    "object-shorthand": "error",
+    "prefer-template": "warn",
+  },
 };
